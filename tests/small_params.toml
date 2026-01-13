@@ -1,0 +1,25 @@
+# Small test configuration for demonstration
+
+[accounts]
+count = 3
+
+[transactions]
+min_per_account = 3
+max_per_account = 5
+
+[amounts]
+min = 10.0
+max = 100.0
+precision = 2
+
+[withdrawals]
+probability = 0.4
+overdraw_probability = 0.2
+
+[disputes]
+probability = 0.3
+resolution_probability = 0.5
+
+[output]
+file = "-"
+seed = 42

@@ -1,0 +1,41 @@
+# Transaction Generator Parameters
+# ================================
+
+[accounts]
+# Number of client accounts to generate
+count = 9500
+
+[transactions]
+# Minimum transactions per account
+min_per_account = 50
+# Maximum transactions per account
+max_per_account = 350030
+
+[amounts]
+# Minimum transaction amount
+min = 0.01
+# Maximum transaction amount
+max = 9999.9906
+# Decimal precision (0-4)
+precision = 4
+
+[withdrawals]
+# Probability of a withdrawal vs deposit (0.0 - 1.0)
+# Higher values mean more withdrawals
+probability = 0.4
+# Probability that a withdrawal will attempt to overdraw (exceed available balance)
+# These will fail during processing but test error handling
+overdraw_probability = 0.2
+
+[disputes]
+# Probability that a deposit will be disputed (0.0 - 1.0)
+probability = 0.05
+# Of disputed transactions, probability of resolution vs chargeback
+resolution_probability = 0.7
+# Remaining (1 - resolution_probability) will be chargebacks
+
+[output]
+# Output file path (use "-" for stdout)
+file = "generated_transactions.csv"
+# Random seed for reproducibility (optional, comment out for random)
+seed = 12345
