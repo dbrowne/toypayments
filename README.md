@@ -152,7 +152,7 @@ src/
 tests/
   integration.rs              # End-to-end binary tests
  bin/
-   generate_transactions.rs   # AI generated csv file generator for testing
+   generate_transactions.rs   # AI generated csv file generator for testing REMOVED CHECKOUT PREV. VERSION
 ```
 
 ## Dependencies
@@ -163,7 +163,7 @@ tests/
 - `anyhow` / `thiserror` - Error handling
 - `tracing` - Logging (optional, via RUST_LOG env var)
 
-## Additional code
+## Additional code (removed due to auto testing issues check out prev. ver to see)
 - bin/generate_transactions A 100% AI created csv generator that reads generator_params.toml for config
 
 

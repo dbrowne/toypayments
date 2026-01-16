@@ -8,10 +8,6 @@ default-run = "toypayments"
 name = "toypayments"
 path = "src/main.rs"
 
-[[bin]]
-name = "generate-transactions"
-path = "src/bin/generate_transactions.rs"
-
 [dependencies]
 anyhow = "1"
 csv = "1"
