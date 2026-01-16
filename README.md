@@ -95,7 +95,7 @@ Output is sorted by client ID.
 - However, all processed deposit/withdrawal transactions are stored in a HashMap for potential disputes
 - For very large files (billions of transactions), this may exceed available memory
 - Successfully tested with a 60GB transaction file containing 1.7B transactions. 
-- cargo run --release --bin  generate-transactions ; cargo run --release generated_transactions.csv >accounts.csv 
+- git checkout 332a5ad; cargo run --release --bin  generate-transactions ; cargo run --release generated_transactions.csv >accounts.csv 
 
 ## Assumptions
 
